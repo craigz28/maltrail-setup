@@ -13,4 +13,5 @@ https://github.com/stamparm/maltrail
 Note: Use either sensor.py or server.py and modifications to baseline maltrail.conf will be made accordingly.
 
 Server section modifications include setting up HTTP_ADDRESS, UDP_ADDRESS, UDP_PORT and USE_SERVER_UPDATE_TRAILS.
+
 Sensor section modifications include setting up LOG_SERVER.
