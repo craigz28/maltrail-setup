@@ -2,6 +2,7 @@
 Setup script to install dependencies and maltrail.
 
 Malicious traffic detection system (Maltrail)
+
 https://github.com/stamparm/maltrail
 
 1. chmod +x maltrail-setup.sh
