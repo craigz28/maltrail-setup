@@ -10,4 +10,4 @@ https://github.com/stamparm/maltrail
 3. ex. ./maltrail-setup.sh sensor.py 192.168.1.1
 4. ex. ./maltrail-setup.sh server.py 192.168.1.1
 
-Note: Use either sensor.py or server.py and modifications to maltrail.conf will be made accordingly.
+Note: Use either sensor.py or server.py and modifications to baseline maltrail.conf will be made accordingly.
