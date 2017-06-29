@@ -25,12 +25,12 @@ fi
 sudo apt -y install supervisor
 
 # Create configuration file for supervisor
-echo "[program:maltrail_script]" >> /etc/supervisor/conf.d/maltrail.conf
-echo "command=sudo python $PWD/maltrail/$FILE" >> /etc/supervisor/conf.d/maltrail.conf
-echo "autostart=true" >> /etc/supervisor/conf.d/maltrail.conf
-echo "autorestart=true" >> /etc/supervisor/conf.d/maltrail.conf
-echo "stderr_logfile=/var/log/maltrail.err.log" >> /etc/supervisor/conf.d/maltrail.conf
-echo "stdout_logfile=/var/log/maltrail.out.log" >> /etc/supervisor/conf.d/maltrail.conf
+sudo echo "[program:maltrail_script]" >> /etc/supervisor/conf.d/maltrail.conf
+sudo echo "command=sudo python $PWD/maltrail/$FILE" >> /etc/supervisor/conf.d/maltrail.conf
+sudo echo "autostart=true" >> /etc/supervisor/conf.d/maltrail.conf
+sudo echo "autorestart=true" >> /etc/supervisor/conf.d/maltrail.conf
+sudo echo "stderr_logfile=/var/log/maltrail.err.log" >> /etc/supervisor/conf.d/maltrail.conf
+sudo echo "stdout_logfile=/var/log/maltrail.out.log" >> /etc/supervisor/conf.d/maltrail.conf
 
 # Initialize supervisor and start maltrail
 sudo supervisorctl reread
