@@ -6,7 +6,7 @@ Malicious traffic detection system (Maltrail)
 https://github.com/stamparm/maltrail
 
 1. chmod +x maltrail-setup.sh
-2. ./maltrail-setup.sh {file} {maltrail server ip address}
+2. ./maltrail-setup.sh {sensor.py or server.py} {maltrail server ip address}
 3. ex. ./maltrail-setup.sh sensor.py 192.168.1.1
 4. ex. ./maltrail-setup.sh server.py 192.168.1.1
 
