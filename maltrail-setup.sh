@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+set -e
+set -u
+
+function usage {
+	echo "Usage:"
+	echo "$0 {sensor.py or server.py} {IP address}"
+	echo "Example: ./maltrail-setup.sh sensor.py 192.168.2.100"
+	exit 1
+}
+
 FILE=$1
 IP=$2
 
