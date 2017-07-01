@@ -10,6 +10,11 @@ function usage {
 	exit 1
 }
 
+# Check for arguments
+if [[ $# -gt 2 || $# -lt 2 ]]; then
+    usage
+fi
+
 FILE=$1
 IP=$2
 
