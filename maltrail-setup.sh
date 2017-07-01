@@ -34,7 +34,7 @@ fi
 # Set IP address in sensor section of maltrail configuration file
 if [ $1 = "sensor.py" ]; then
     sed -i '69s/.*/LOG_SERVER '$2':8337/' $PWD/maltrail/maltrail.conf
-    sed -i '78s/.*/UPDATE_SERVER http://'$2':8338/trails/' $PWD/maltrail/maltrail.conf
+    sed -i '78s/.*/UPDATE_SERVER http:\/\/'$2':8338\/trails/' $PWD/maltrail/maltrail.conf
 fi
 
 # Install supervisor to start server.py or sensor.py
