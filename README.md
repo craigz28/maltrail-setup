@@ -14,4 +14,4 @@ Note: Use either sensor.py or server.py and modifications to baseline maltrail.c
 
 Server section modifications include setting up HTTP_ADDRESS, UDP_ADDRESS, UDP_PORT and USE_SERVER_UPDATE_TRAILS.
 
-Sensor section modifications include setting up LOG_SERVER.
+Sensor section modifications include setting up LOG_SERVER and UPDATE_SERVER.
