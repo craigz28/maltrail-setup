@@ -23,7 +23,7 @@ sudo apt -y install git python-pcapy
 git clone https://github.com/stamparm/maltrail.git
 sudo apt -y install schedtool
 
-# Set IP address in server section of maltrail configuration file
+# Set Maltrail server IP address in server section of maltrail configuration file
 if [ $1 = "server.py" ]; then
     sed -i '4s/.*/HTTP_ADDRESS '$2'/' $PWD/maltrail/maltrail.conf
     sed -i '23s/.*/UDP_ADDRESS '$2'/' $PWD/maltrail/maltrail.conf
@@ -31,7 +31,7 @@ if [ $1 = "server.py" ]; then
     sed -i '29s/.*/USE_SERVER_UPDATE_TRAILS true/' $PWD/maltrail/maltrail.conf
 fi
 
-# Set IP address in sensor section of maltrail configuration file
+# Set Maltrail server IP address in sensor section of maltrail configuration file
 if [ $1 = "sensor.py" ]; then
     sed -i '69s/.*/LOG_SERVER '$2':8337/' $PWD/maltrail/maltrail.conf
     sed -i '78s/.*/UPDATE_SERVER http:\/\/'$2':8338\/trails/' $PWD/maltrail/maltrail.conf
