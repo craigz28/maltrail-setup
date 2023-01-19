@@ -19,9 +19,9 @@ FILE=$1
 IP=$2
 
 # Install dependencies and download Maltrail
-sudo apt -y install git python-pcapy
+sudo apt-get install -y git python3 python3-dev python3-pip python-is-python3 libpcap-dev build-essential procps schedtool
+sudo pip3 install pcapy-ng
 git clone https://github.com/stamparm/maltrail.git
-sudo apt -y install schedtool
 
 # Set Maltrail server IP address in server section of maltrail configuration file
 if [ $1 = "server.py" ]; then
